@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}TODO PAGE{% endblock %}
+
+{% block style %}
+    body{
+        color: red
+    }
+{% endblock %}
+
+{% block body %}
+    <h1>
+        TODO-LIST
+    </h1>56
+    <ul>
+        {% for todo in todos: %}
+            <li>{{ todo }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
