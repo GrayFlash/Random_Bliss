@@ -3,3 +3,8 @@ Data_Science_Packt-Book/.ipynb_checkpoints/*
 MernApplications/ShoppingList/node_modules/*
 
 MernApplications/ShoppingList/config/*
+
+pca-coursera/__pycache__
+pca-coursera/.ipynb_checkpoints
+pca-coursera/olivetti_py3.pkz
+pca-coursera/mnist-original.mat
