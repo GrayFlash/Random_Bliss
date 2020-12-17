@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Script/test.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="Outer">
+        <div class="InnerRegion">
+            <p id="TextArea" class="TextArea">
+                Alternate
+            </p>
+        </div>
+    </div>
+   
+</body>
+</html>
+
+<script>
+    function test(){
+    var wordsCount = 200;
+    var x = words_generator(wordsCount);
+    element = document.getElementById("TextArea");
+    element.innerText = x;
+}
+test();
+function words_generator(wordsCount){
+    var x = "";
+    for( var i=0; i<wordsCount; i++){
+        var alphabetsCount = Math.round(Math.random() * 10);
+        var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+        for(var j=0; j<alphabetsCount; j++){
+            x += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        x += " ";
+    }
+    return x;
+}
+</script>

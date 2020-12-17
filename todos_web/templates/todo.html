@@ -9,13 +9,23 @@
 {% endblock %}
 
 {% block body %}
-    <h1>
-        TODO-LIST
-    </h1>56
-    <ul>
-        {% for todo in todos: %}
-            <li>{{ todo }}</li>
-        {% endfor %}
-    </ul>
+    <header>
+        <span>
+            <h1>
+                TODO-LIST
+            </h1>
+        </span>
+        <span>
+            Add Task
+        </span>
+    </header>
+    <div>
+        <ul>
+            {% for todo in todos: %}
+                <li>{{ todo }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
 
 {% endblock %}
